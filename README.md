@@ -3,6 +3,7 @@
 - ①复制到`/Users/xi/.dsh/.agent-presets`中 
 - ②把config中的`radix`删除这个是配合sglang ctx pool的, sglang的代码我还没发出来
 - ③使用`/gvs5h`Command
+- ④找个ai,让它帮你补齐sglang的sss和ses的两个路由, 很抱歉,当前仓库还是preview的版本
 
 * 原仓库: https://github.com/slee-persis/GVS5H
 * 我们复现: 严格按照其工作流,分数只高1分(可以认为是误差),还在测,还在复现他们的数据集
