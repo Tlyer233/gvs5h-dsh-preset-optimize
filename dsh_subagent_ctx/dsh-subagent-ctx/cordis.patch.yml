@@ -1,0 +1,4 @@
+# 宿主组合插入。所有 preset 共用，不写进某个 agent.cordis.yml。
+- insert:
+    - id: dsh-subagent-ctx
+      name: dsh-subagent-ctx

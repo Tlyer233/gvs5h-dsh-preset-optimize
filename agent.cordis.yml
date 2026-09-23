@@ -104,9 +104,6 @@
 - id: command-goal
   name: '@deepseek-ai/dsh-command-goal'
 
-- id: command-gvs5h
-  name: ./command-gvs5h.js
-
 - id: tool-goal
   name: '@deepseek-ai/dsh-tool-goal'
 
@@ -238,6 +235,14 @@
 
     - id: tool-workflow
       name: '@deepseek-ai/dsh-tool-workflow'
+
+    # /gvs5h lives here so laborer pressure hears workflow/agent-start.
+    - id: command-gvs5h
+      name: ./commands/gvs5h/command.js
+
+    # /test_inject lives in this isolate so it hears workflow/agent-start.
+    - id: command-test-inject
+      name: ./commands/test-inject/command.js
 
     # Off by default with the base row it mirrors: the tool description
     # restricts `ralph` to runs the human explicitly asked for, and completion

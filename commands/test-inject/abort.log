@@ -1,0 +1,132 @@
+2026-09-22T13:29:32.261Z STEER_OK label=hard-a child=7935bf8e-aa37-4507-8235-9afff7d53880 act=inject steer_ms=2 dt_abort_ms=-1
+2026-09-22T13:29:55.273Z STEER_OK label=hard-a child=7935bf8e-aa37-4507-8235-9afff7d53880 act=steer steer_ms=0 dt_abort_ms=-1
+2026-09-22T13:41:01.860Z STEER_OK label=hard-a child=c2793194-a240-49a1-acb7-5c4e1585649d act=inject steer_ms=1 dt_abort_ms=-1
+2026-09-22T13:41:04.862Z STEER_OK label=hard-a child=c2793194-a240-49a1-acb7-5c4e1585649d act=steer steer_ms=2 dt_abort_ms=-1
+2026-09-22T13:41:13.867Z CANCEL_CALL label=hard-a child=c2793194-a240-49a1-acb7-5c4e1585649d act=cancel+inject ctx=17102
+2026-09-22T13:41:13.867Z STEER_OK label=hard-a child=c2793194-a240-49a1-acb7-5c4e1585649d act=cancel+inject dt_abort_ms=0 status=running
+2026-09-22T13:41:13.882Z ABORT_ALL label=hard-a ok=true http_ms=14 status=200 body=
+2026-09-22T13:41:13.883Z CANCEL_RET label=hard-a child=c2793194-a240-49a1-acb7-5c4e1585649d act=cancel+inject cancel_ms=1 status=running
+2026-09-22T13:41:13.885Z STREAM_END label=hard-a child=c2793194-a240-49a1-acb7-5c4e1585649d after=cancel+inject dt_abort_ms=18
+2026-09-22T13:41:13.886Z STATUS label=hard-a child=c2793194-a240-49a1-acb7-5c4e1585649d status=idle after=cancel+inject dt_abort_ms=19
+2026-09-22T13:41:21.933Z STEER_OK label=hard-b child=26a7750e-5f77-4813-b03c-7d875fd18c37 act=inject steer_ms=1 dt_abort_ms=-1
+2026-09-22T13:41:30.940Z STEER_OK label=hard-b child=26a7750e-5f77-4813-b03c-7d875fd18c37 act=steer steer_ms=1 dt_abort_ms=-1
+2026-09-22T13:41:42.771Z CANCEL_CALL label=hard-b child=26a7750e-5f77-4813-b03c-7d875fd18c37 act=cancel+inject ctx=17048
+2026-09-22T13:41:42.773Z STEER_OK label=hard-b child=26a7750e-5f77-4813-b03c-7d875fd18c37 act=cancel+inject dt_abort_ms=2 status=running
+2026-09-22T13:41:42.788Z ABORT_ALL label=hard-b ok=true http_ms=15 status=200 body=
+2026-09-22T13:41:42.789Z CANCEL_RET label=hard-b child=26a7750e-5f77-4813-b03c-7d875fd18c37 act=cancel+inject cancel_ms=0 status=running
+2026-09-22T13:41:42.790Z STREAM_END label=hard-b child=26a7750e-5f77-4813-b03c-7d875fd18c37 after=cancel+inject dt_abort_ms=19
+2026-09-22T13:41:42.792Z STATUS label=hard-b child=26a7750e-5f77-4813-b03c-7d875fd18c37 status=idle after=cancel+inject dt_abort_ms=21
+2026-09-22T13:51:46.462Z CANCEL_CALL label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 act=cancel+inject ctx=17070
+2026-09-22T13:51:46.463Z CANCEL_RET label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 act=cancel+inject cancel_ms=1 status=running
+2026-09-22T13:51:46.465Z STEER_OK label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 act=cancel+inject dt_abort_ms=3 status=running
+2026-09-22T13:51:46.468Z STREAM_END label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 after=cancel+inject dt_abort_ms=6
+2026-09-22T13:51:46.470Z STATUS label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 status=idle after=cancel+inject dt_abort_ms=8
+2026-09-22T13:51:46.471Z STATUS label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 status=running after=cancel+inject dt_abort_ms=9
+2026-09-22T13:51:46.487Z STREAM_START label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 after=cancel+inject dt_abort_ms=25 status=running
+2026-09-22T13:52:18.482Z CANCEL_CALL label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 act=cancel+steer ctx=20013
+2026-09-22T13:52:18.483Z CANCEL_RET label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 act=cancel+steer cancel_ms=0 status=running
+2026-09-22T13:52:18.485Z STEER_OK label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 act=cancel+steer dt_abort_ms=3 status=running
+2026-09-22T13:52:18.488Z STREAM_END label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 after=cancel+steer dt_abort_ms=6
+2026-09-22T13:52:18.490Z STATUS label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 status=idle after=cancel+steer dt_abort_ms=8
+2026-09-22T13:52:18.490Z STATUS label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 status=running after=cancel+steer dt_abort_ms=8
+2026-09-22T13:52:18.513Z STREAM_START label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 after=cancel+steer dt_abort_ms=31 status=running
+2026-09-22T13:52:44.504Z CANCEL_CALL label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 act=cancel ctx=22068
+2026-09-22T13:52:44.506Z CANCEL_RET label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 act=cancel cancel_ms=2 status=running
+2026-09-22T13:52:44.508Z STREAM_END label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 after=cancel dt_abort_ms=4
+2026-09-22T13:52:44.510Z STATUS label=hard-a child=4e2655fb-8650-42de-a467-46733e58f236 status=idle after=cancel dt_abort_ms=6
+2026-09-22T13:53:16.564Z CANCEL_CALL label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c act=cancel+inject ctx=17074
+2026-09-22T13:53:16.565Z CANCEL_RET label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c act=cancel+inject cancel_ms=1 status=running
+2026-09-22T13:53:16.565Z STEER_OK label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c act=cancel+inject dt_abort_ms=1 status=running
+2026-09-22T13:53:16.567Z STREAM_END label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c after=cancel+inject dt_abort_ms=3
+2026-09-22T13:53:16.569Z STATUS label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c status=idle after=cancel+inject dt_abort_ms=5
+2026-09-22T13:53:16.570Z STATUS label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c status=running after=cancel+inject dt_abort_ms=6
+2026-09-22T13:53:16.594Z STREAM_START label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c after=cancel+inject dt_abort_ms=30 status=running
+2026-09-22T13:53:49.584Z CANCEL_CALL label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c act=cancel+steer ctx=20050
+2026-09-22T13:53:49.584Z CANCEL_RET label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c act=cancel+steer cancel_ms=0 status=running
+2026-09-22T13:53:49.585Z STEER_OK label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c act=cancel+steer dt_abort_ms=1 status=running
+2026-09-22T13:53:49.588Z STREAM_END label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c after=cancel+steer dt_abort_ms=4
+2026-09-22T13:53:49.590Z STATUS label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c status=idle after=cancel+steer dt_abort_ms=6
+2026-09-22T13:53:49.590Z STATUS label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c status=running after=cancel+steer dt_abort_ms=6
+2026-09-22T13:53:49.609Z STREAM_START label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c after=cancel+steer dt_abort_ms=25 status=running
+2026-09-22T13:54:17.601Z CANCEL_CALL label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c act=cancel ctx=22061
+2026-09-22T13:54:17.602Z CANCEL_RET label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c act=cancel cancel_ms=1 status=running
+2026-09-22T13:54:17.604Z STREAM_END label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c after=cancel dt_abort_ms=4
+2026-09-22T13:54:17.606Z STATUS label=hard-b child=62c16970-9286-4dbc-b70d-129ca2f8584c status=idle after=cancel dt_abort_ms=6
+2026-09-22T14:44:51.568Z CANCEL_CALL label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 act=cancel+inject ctx=17052
+2026-09-22T14:44:51.572Z CANCEL_RET label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 act=cancel+inject cancel_ms=1 status=running
+2026-09-22T14:44:51.573Z STEER_OK label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 act=cancel+inject dt_abort_ms=5 status=running
+2026-09-22T14:44:51.576Z STREAM_END label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 after=cancel+inject dt_abort_ms=8
+2026-09-22T14:44:51.578Z STATUS label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 status=idle after=cancel+inject dt_abort_ms=10
+2026-09-22T14:44:51.579Z STATUS label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 status=running after=cancel+inject dt_abort_ms=11
+2026-09-22T14:44:51.598Z STREAM_START label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 after=cancel+inject dt_abort_ms=30 status=running
+2026-09-22T14:45:23.592Z CANCEL_CALL label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 act=cancel+steer ctx=20038
+2026-09-22T14:45:23.592Z CANCEL_RET label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 act=cancel+steer cancel_ms=0 status=running
+2026-09-22T14:45:23.593Z STEER_OK label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 act=cancel+steer dt_abort_ms=1 status=running
+2026-09-22T14:45:23.596Z STREAM_END label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 after=cancel+steer dt_abort_ms=4
+2026-09-22T14:45:23.598Z STATUS label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 status=idle after=cancel+steer dt_abort_ms=6
+2026-09-22T14:45:23.599Z STATUS label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 status=running after=cancel+steer dt_abort_ms=7
+2026-09-22T14:45:23.615Z STREAM_START label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 after=cancel+steer dt_abort_ms=23 status=running
+2026-09-22T14:45:52.482Z CANCEL_CALL label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 act=cancel ctx=22031
+2026-09-22T14:45:52.483Z CANCEL_RET label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 act=cancel cancel_ms=1 status=running
+2026-09-22T14:45:52.486Z STREAM_END label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 after=cancel dt_abort_ms=4
+2026-09-22T14:45:52.488Z STATUS label=hard-a child=ee80176c-fcfa-4ccf-b779-66d103591c61 status=idle after=cancel dt_abort_ms=6
+2026-09-22T14:53:04.879Z CANCEL_CALL label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f act=cancel+inject ctx=17247
+2026-09-22T14:53:04.881Z CANCEL_RET label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f act=cancel+inject cancel_ms=0 status=running
+2026-09-22T14:53:04.882Z STEER_OK label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f act=cancel+inject dt_abort_ms=3 status=running
+2026-09-22T14:53:04.884Z STREAM_END label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f after=cancel+inject dt_abort_ms=5
+2026-09-22T14:53:04.887Z STATUS label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f status=idle after=cancel+inject dt_abort_ms=8
+2026-09-22T14:53:04.887Z STATUS label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f status=running after=cancel+inject dt_abort_ms=8
+2026-09-22T14:53:04.904Z STREAM_START label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f after=cancel+inject dt_abort_ms=25 status=running
+2026-09-22T14:53:34.899Z CANCEL_CALL label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f act=cancel+steer ctx=20052
+2026-09-22T14:53:34.900Z CANCEL_RET label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f act=cancel+steer cancel_ms=1 status=running
+2026-09-22T14:53:34.901Z STEER_OK label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f act=cancel+steer dt_abort_ms=2 status=running
+2026-09-22T14:53:34.905Z STREAM_END label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f after=cancel+steer dt_abort_ms=6
+2026-09-22T14:53:34.908Z STATUS label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f status=idle after=cancel+steer dt_abort_ms=9
+2026-09-22T14:53:34.908Z STATUS label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f status=running after=cancel+steer dt_abort_ms=9
+2026-09-22T14:53:34.925Z STREAM_START label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f after=cancel+steer dt_abort_ms=26 status=running
+2026-09-22T14:54:02.923Z CANCEL_CALL label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f act=cancel ctx=22069
+2026-09-22T14:54:02.924Z CANCEL_RET label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f act=cancel cancel_ms=1 status=running
+2026-09-22T14:54:02.926Z STREAM_END label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f after=cancel dt_abort_ms=3
+2026-09-22T14:54:02.928Z STATUS label=hard-a child=77222ac4-6347-41cd-8e40-0d1da96aae7f status=idle after=cancel dt_abort_ms=5
+2026-09-22T14:54:17.002Z CANCEL_CALL label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 act=cancel+inject ctx=20301
+2026-09-22T14:54:17.003Z CANCEL_RET label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 act=cancel+inject cancel_ms=0 status=running
+2026-09-22T14:54:17.003Z STEER_OK label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 act=cancel+inject dt_abort_ms=1 status=running
+2026-09-22T14:54:17.003Z CANCEL_CALL label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 act=cancel+steer ctx=20301
+2026-09-22T14:54:17.003Z CANCEL_RET label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 act=cancel+steer cancel_ms=0 status=running
+2026-09-22T14:54:17.004Z STEER_OK label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 act=cancel+steer dt_abort_ms=1 status=running
+2026-09-22T14:54:17.005Z STREAM_END label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 after=cancel+steer dt_abort_ms=2
+2026-09-22T14:54:17.006Z STATUS label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 status=idle after=cancel+steer dt_abort_ms=3
+2026-09-22T14:54:17.006Z STATUS label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 status=running after=cancel+steer dt_abort_ms=3
+2026-09-22T14:54:17.025Z STREAM_START label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 after=cancel+steer dt_abort_ms=22 status=running
+2026-09-22T14:54:41.018Z CANCEL_CALL label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 act=cancel ctx=22106
+2026-09-22T14:54:41.020Z CANCEL_RET label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 act=cancel cancel_ms=2 status=running
+2026-09-22T14:54:41.022Z STREAM_END label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 after=cancel dt_abort_ms=4
+2026-09-22T14:54:41.025Z STATUS label=hard-b child=6dba486f-05dc-404a-bc11-4e0bbe3ae1c1 status=idle after=cancel dt_abort_ms=7
+2026-09-22T14:55:36.089Z CANCEL_CALL label=hard-a child=bde6fe4e-9c15-4149-a23a-f7defe7659b4 act=cancel+inject ctx=28997
+2026-09-22T14:55:36.090Z CANCEL_RET label=hard-a child=bde6fe4e-9c15-4149-a23a-f7defe7659b4 act=cancel+inject cancel_ms=0 status=running
+2026-09-22T14:55:36.090Z STEER_OK label=hard-a child=bde6fe4e-9c15-4149-a23a-f7defe7659b4 act=cancel+inject dt_abort_ms=1 status=running
+2026-09-22T14:55:36.090Z CANCEL_CALL label=hard-a child=bde6fe4e-9c15-4149-a23a-f7defe7659b4 act=cancel+steer ctx=28997
+2026-09-22T14:55:36.090Z CANCEL_RET label=hard-a child=bde6fe4e-9c15-4149-a23a-f7defe7659b4 act=cancel+steer cancel_ms=0 status=running
+2026-09-22T14:55:36.091Z STEER_OK label=hard-a child=bde6fe4e-9c15-4149-a23a-f7defe7659b4 act=cancel+steer dt_abort_ms=1 status=running
+2026-09-22T14:55:36.091Z CANCEL_CALL label=hard-a child=bde6fe4e-9c15-4149-a23a-f7defe7659b4 act=cancel ctx=28997
+2026-09-22T14:55:36.091Z CANCEL_RET label=hard-a child=bde6fe4e-9c15-4149-a23a-f7defe7659b4 act=cancel cancel_ms=0 status=running
+2026-09-22T14:55:36.093Z STREAM_END label=hard-a child=bde6fe4e-9c15-4149-a23a-f7defe7659b4 after=cancel dt_abort_ms=2
+2026-09-22T14:55:36.093Z STATUS label=hard-a child=bde6fe4e-9c15-4149-a23a-f7defe7659b4 status=idle after=cancel dt_abort_ms=2
+2026-09-22T14:56:16.152Z CANCEL_CALL label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a act=cancel+inject ctx=18027
+2026-09-22T14:56:16.153Z CANCEL_RET label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a act=cancel+inject cancel_ms=1 status=running
+2026-09-22T14:56:16.153Z STEER_OK label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a act=cancel+inject dt_abort_ms=1 status=running
+2026-09-22T14:56:16.154Z STREAM_END label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a after=cancel+inject dt_abort_ms=2
+2026-09-22T14:56:16.154Z STATUS label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a status=idle after=cancel+inject dt_abort_ms=2
+2026-09-22T14:56:16.155Z STATUS label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a status=running after=cancel+inject dt_abort_ms=3
+2026-09-22T14:56:16.166Z STREAM_START label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a after=cancel+inject dt_abort_ms=14 status=running
+2026-09-22T14:56:28.161Z CANCEL_CALL label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a act=cancel+steer ctx=19035
+2026-09-22T14:56:28.163Z CANCEL_RET label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a act=cancel+steer cancel_ms=2 status=running
+2026-09-22T14:56:28.163Z STEER_OK label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a act=cancel+steer dt_abort_ms=2 status=running
+2026-09-22T14:56:28.166Z STREAM_END label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a after=cancel+steer dt_abort_ms=5
+2026-09-22T14:56:28.168Z STATUS label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a status=idle after=cancel+steer dt_abort_ms=7
+2026-09-22T14:56:28.169Z STATUS label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a status=running after=cancel+steer dt_abort_ms=8
+2026-09-22T14:56:28.186Z STREAM_START label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a after=cancel+steer dt_abort_ms=25 status=running
+2026-09-22T14:56:39.169Z CANCEL_CALL label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a act=cancel ctx=20012
+2026-09-22T14:56:39.171Z CANCEL_RET label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a act=cancel cancel_ms=2 status=running
+2026-09-22T14:56:39.174Z STREAM_END label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a after=cancel dt_abort_ms=5
+2026-09-22T14:56:39.176Z STATUS label=hard-b child=24f0df2a-fbd7-49e9-91e1-5a408cc9f07a status=idle after=cancel dt_abort_ms=7

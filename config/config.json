@@ -1,0 +1,10 @@
+{
+  "radix": true,
+  "pressure": {
+    "soft": 0.5,
+    "firm": 0.6,
+    "hard": 0.7
+  },
+  "planRounds": 8,
+  "replanMax": 2
+}

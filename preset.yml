@@ -1,2 +1,2 @@
 name: fable-optimize-sglang
-description: Ordinary chat by default. /gvs5h runs one optimize+GVS5H turn. SSS/SES on when radix.enabled=on. Icon via ui/ client bundle. Logs at {{cwd}}/.fable/radix.log.
+description: Ordinary chat by default. /gvs5h runs one optimize+GVS5H turn. SSS/SES on when config.radix is true. Icon via ui/ client bundle. Logs at {{cwd}}/.fable/radix.log.
