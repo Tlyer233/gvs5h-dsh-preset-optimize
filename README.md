@@ -26,54 +26,76 @@
 
 
 
+`R:` 读，`W:` 写。WS = `.fable`。U = 计划依赖、但目前说不出的环境事实。T = 工具（verify 必有，action 可选），登记在 tools.json。
+
 ```
-`R:` 读，`W:` 写。WS = `.fable`。U = 计划依赖、但目前说不出的环境事实。
 user
         │
         ▼
 optimize_manager                       W: 无（组 PROBLEM）
         │
         ▼
-[loop 起点 wipeProbe]                  删 try_scripts/ probes.json pressure.json
+[loop 起点 wipeProbe]                  删 try_scripts/ probes.json tools.json pressure.json
         │
         ▼
 predominant_manager（分诊）            R: history task.md
-        │                              W: task.md probes.json（写入 U 列表）
+        │                              W: task.md probes.json（U 列表）tools.json（T 列表）
         │
-        ├── U 为空 ──────────────────────────────────────────┐
-        │                                                   │
-        ▼                                                   │
-┌─►┌─► predominant_manager            R: probes.json try_scripts/ LAST TRY 或 REPLAN
-│  │       │                          W: probes.json（每轮）
+        ├── U 为空 且 verify 一条命令即可（自己跑、直接 adopted）──┐
+        │                                                          │
+        ▼                                                          │
+┌─►┌─► predominant_manager            R: probes.json tools.json try_scripts/ LAST TRY 或 REPLAN
+│  │       │                          W: probes.json tools.json（每轮）
 │  │       │                             try_scripts/（可选，小验证）
 │  │       │                             plan.md tasks.json（仅 READY）
-│  │       ▼
-│  │   try_worker                     R: TRY 规格 try_scripts/
-│  │       │                          W: try_scripts/ 仅此
+│  │       ▼  TRY（KIND=fact 查事实 / KIND=tool 建工具）
+│  │   try_worker                     R: TRY 规格
+│  │       │                          W: try_scripts/ 仅此（输出进 try_scripts/out/）
+│  │       │                          图片输出必须 read_image + seen:，硬缺陷即 failed
 │  │       │                          host W: pressure.json（soft/firm/hard）
 │  └───────┘ STATUS=continue（最多 planRounds 轮）
-│          │ STATUS=ready（或 FINAL ROUND 强制 ready）
-│          ▼                                                │
-│  ┌─► decision_manager  ◄──────────────────────────────────┘
-│  │       │                          R: task.md plan.md tasks.json notes.md checks.md deliverable.md
-│  │       │                          W: tasks.json
+│          │ STATUS=ready（门槛：U 全解决 + 至少 1 个 verify 工具 adopted）
+│          ▼                                                       │
+│  [loop.js 每轮从 tools.json 生成 TOOLS 块，注入下面三方]          │
+│          │                                                       │
+│  ┌─► decision_manager  ◄─────────────────────────────────────────┘
+│  │       │                          R: task.md plan.md tasks.json tools.json notes.md checks.md deliverable.md
+│  │       │                             + TOOLS + check 的 ROOT / TOOL REVIEW
+│  │       │                          W: tasks.json tools.json（采纳 / 改版 / broken / 停用）
+│  │       │                             proposed/<P> → try_scripts/<P>（仅搬运 endorse 的提议）
 │  │       ▼
-│  │   laborer_worker                 R: plan.md notes.md try_scripts/
+│  │   laborer_worker                 R: plan.md notes.md + TOOLS
 │  │       │                          W: CWD 交付物 notes.md deliverable.md
-│  │       │                             try_scripts/（仅就地修 PLAN 点名的脚本）
+│  │       │                             try_scripts/out/（scratch）
+│  │       │                             try_scripts/<T>（仅就地修 TOOLS 里的工具 → Tool feedback）
+│  │       │                             try_scripts/proposed/<P>（每轮至多提议 1 个 → PROPOSE）
+│  │       │                          视觉产物 read_image + Seen 行
 │  │       │                          host W: pressure.json（soft/firm/hard）
 │  │       ▼
-│  │   check_worker                   R: task.md deliverable.md checks.md notes.md pressure.json
-│  │       │                          W: checks.md（仅首次）
-│  └───────┘ STATUS=continue
+│  │   check_worker                   R: TASK + DELIVERABLE + PROPOSE + TOOLS + pressure.json + ledger
+│  │       │                          W: checks.md（BASELINE 首次冻结；每轮追加 ROUND r）
+│  │       │                             try_scripts/out/（亲测输出）
+│  │       │                          本轮项 + 基线项全部亲测；视觉项现拍 read_image，先 seen 后判
+│  │       │                          CLAIMS 逐条核；ROOT 追根；TOOL REVIEW 亲测提议（含反向对照）
+│  └───────┘ STATUS=continue（ROOT=upstream → 先返工地基）
 │          │
-└──────────┘ STATUS=replan（带 REPLAN 证据，最多 replanMax 次；不清 probes.json）
+└──────────┘ STATUS=replan（ROOT=plan / plan 工具 instrument broken 等；最多 replanMax 次；不清 probes.json tools.json）
            │
-           │ STATUS=done
+           │ STATUS=done（仅 PASSED all）
            ▼
-history_worker                         R: 全部 ledger + probes.json + try_scripts/
-           │                           W: history；PROMOTE 时复制脚本到 CWD
+history_worker                         R: 全部 ledger + probes.json + tools.json + try_scripts/
+           │                           W: history；PROMOTE 只从 adopted 工具中选，复制到 CWD
            ▼
 [loop 终点 wipeLedger + wipeProbe]
+```
 
+工具生命周期（公司化）：
+
+```
+laborer 提议 ──► check 亲测评审 ──► decision 拍板
+proposed        endorse / revise / reject     adopted / 派改版任务 / 丢弃
+                                               │
+adopted ◄── check 复测 endorse ◄── revised ◄── laborer 就地修改（Tool feedback）
+   │
+   └──► check 发现跑不起来 ──► broken ──► decision 派修复；连续两轮 broken → retired
 ```

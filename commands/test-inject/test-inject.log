@@ -4268,3 +4268,243 @@
 2026-09-23T05:15:46.143Z START meta=gvs-solve label=history_worker phase=wrap childId=2988c89b-7fb2-4f4c-990a-a4d659378129
 2026-09-23T05:17:27.076Z WF-END meta=gvs-solve childId=2988c89b-7fb2-4f4c-990a-a4d659378129 outcome=completed
 2026-09-23T05:17:27.076Z WF-END meta=gvs-solve childId=2988c89b-7fb2-4f4c-990a-a4d659378129 outcome=completed
+2026-09-23T11:24:00.511Z WF-START name=gvs-solve id=717095ba-a7f9-42cd-9a78-3e8609171f02
+2026-09-23T11:24:00.511Z WF-START name=gvs-solve id=717095ba-a7f9-42cd-9a78-3e8609171f02
+2026-09-23T11:24:00.701Z START meta=gvs-solve label=predominant_manager phase=plan childId=768f8604-7a87-4354-9daa-46809518edf4
+2026-09-23T11:24:00.701Z START meta=gvs-solve label=predominant_manager phase=plan childId=768f8604-7a87-4354-9daa-46809518edf4
+2026-09-23T11:25:16.651Z WF-END meta=gvs-solve childId=768f8604-7a87-4354-9daa-46809518edf4 outcome=completed
+2026-09-23T11:25:16.651Z WF-END meta=gvs-solve childId=768f8604-7a87-4354-9daa-46809518edf4 outcome=completed
+2026-09-23T11:25:16.706Z START meta=gvs-solve label=decision_manager phase=solve childId=a8338050-5f0b-4090-91b8-1c28e595b32d
+2026-09-23T11:25:16.706Z START meta=gvs-solve label=decision_manager phase=solve childId=a8338050-5f0b-4090-91b8-1c28e595b32d
+2026-09-23T11:28:36.276Z WF-END meta=gvs-solve childId=a8338050-5f0b-4090-91b8-1c28e595b32d outcome=completed
+2026-09-23T11:28:36.276Z WF-END meta=gvs-solve childId=a8338050-5f0b-4090-91b8-1c28e595b32d outcome=completed
+2026-09-23T11:28:36.336Z START meta=gvs-solve label=laborer_worker phase=solve childId=92827c16-0eb1-498b-a92d-b03108667c1f
+2026-09-23T11:28:36.336Z START meta=gvs-solve label=laborer_worker phase=solve childId=92827c16-0eb1-498b-a92d-b03108667c1f
+2026-09-23T11:33:43.302Z WF-END meta=gvs-solve childId=92827c16-0eb1-498b-a92d-b03108667c1f outcome=completed
+2026-09-23T11:33:43.302Z WF-END meta=gvs-solve childId=92827c16-0eb1-498b-a92d-b03108667c1f outcome=completed
+2026-09-23T11:33:43.369Z START meta=gvs-solve label=check_worker phase=solve childId=416eb203-8400-4f16-9e4a-cfb8994e2a32
+2026-09-23T11:33:43.369Z START meta=gvs-solve label=check_worker phase=solve childId=416eb203-8400-4f16-9e4a-cfb8994e2a32
+2026-09-23T11:34:59.203Z WF-END meta=gvs-solve childId=416eb203-8400-4f16-9e4a-cfb8994e2a32 outcome=completed
+2026-09-23T11:34:59.203Z WF-END meta=gvs-solve childId=416eb203-8400-4f16-9e4a-cfb8994e2a32 outcome=completed
+2026-09-23T11:34:59.267Z START meta=gvs-solve label=decision_manager#2 phase=solve childId=e7ee48ad-c88b-4a2f-9835-f8ee1cffebbc
+2026-09-23T11:34:59.267Z START meta=gvs-solve label=decision_manager#2 phase=solve childId=e7ee48ad-c88b-4a2f-9835-f8ee1cffebbc
+2026-09-23T11:35:38.064Z WF-END meta=gvs-solve childId=e7ee48ad-c88b-4a2f-9835-f8ee1cffebbc outcome=completed
+2026-09-23T11:35:38.064Z WF-END meta=gvs-solve childId=e7ee48ad-c88b-4a2f-9835-f8ee1cffebbc outcome=completed
+2026-09-23T11:35:38.120Z START meta=gvs-solve label=history_worker phase=wrap childId=c2eab1fb-8a17-4c35-921b-f18033f9ce08
+2026-09-23T11:35:38.120Z START meta=gvs-solve label=history_worker phase=wrap childId=c2eab1fb-8a17-4c35-921b-f18033f9ce08
+2026-09-23T11:36:27.798Z WF-END meta=gvs-solve childId=c2eab1fb-8a17-4c35-921b-f18033f9ce08 outcome=completed
+2026-09-23T11:36:27.798Z WF-END meta=gvs-solve childId=c2eab1fb-8a17-4c35-921b-f18033f9ce08 outcome=completed
+2026-09-23T12:12:51.791Z WF-START name=gvs-solve id=892b4dd8-07ce-460b-9aaa-77d5f16505b0
+2026-09-23T12:12:51.791Z WF-START name=gvs-solve id=892b4dd8-07ce-460b-9aaa-77d5f16505b0
+2026-09-23T12:12:51.887Z START meta=gvs-solve label=predominant_manager phase=plan childId=968dd683-3fbb-4d44-a57b-f28e9efb9196
+2026-09-23T12:12:51.887Z START meta=gvs-solve label=predominant_manager phase=plan childId=968dd683-3fbb-4d44-a57b-f28e9efb9196
+2026-09-23T12:17:04.811Z WF-END meta=gvs-solve childId=968dd683-3fbb-4d44-a57b-f28e9efb9196 outcome=completed
+2026-09-23T12:17:04.811Z WF-END meta=gvs-solve childId=968dd683-3fbb-4d44-a57b-f28e9efb9196 outcome=completed
+2026-09-23T12:17:04.866Z START meta=gvs-solve label=decision_manager phase=solve childId=51d732ba-7e63-4dbc-8df2-f08cde7e0ab9
+2026-09-23T12:17:04.866Z START meta=gvs-solve label=decision_manager phase=solve childId=51d732ba-7e63-4dbc-8df2-f08cde7e0ab9
+2026-09-23T12:17:41.421Z WF-END meta=gvs-solve childId=51d732ba-7e63-4dbc-8df2-f08cde7e0ab9 outcome=completed
+2026-09-23T12:17:41.421Z WF-END meta=gvs-solve childId=51d732ba-7e63-4dbc-8df2-f08cde7e0ab9 outcome=completed
+2026-09-23T12:17:41.477Z START meta=gvs-solve label=laborer_worker phase=solve childId=013c15c3-e2c1-4dd5-9b97-619e9630bed1
+2026-09-23T12:17:41.477Z START meta=gvs-solve label=laborer_worker phase=solve childId=013c15c3-e2c1-4dd5-9b97-619e9630bed1
+2026-09-23T12:20:26.093Z WF-END meta=gvs-solve childId=013c15c3-e2c1-4dd5-9b97-619e9630bed1 outcome=completed
+2026-09-23T12:20:26.093Z WF-END meta=gvs-solve childId=013c15c3-e2c1-4dd5-9b97-619e9630bed1 outcome=completed
+2026-09-23T12:20:26.153Z START meta=gvs-solve label=check_worker phase=solve childId=f1aab82d-44d7-4542-87ac-8331662b6d14
+2026-09-23T12:20:26.153Z START meta=gvs-solve label=check_worker phase=solve childId=f1aab82d-44d7-4542-87ac-8331662b6d14
+2026-09-23T12:22:15.004Z WF-END meta=gvs-solve childId=f1aab82d-44d7-4542-87ac-8331662b6d14 outcome=completed
+2026-09-23T12:22:15.004Z WF-END meta=gvs-solve childId=f1aab82d-44d7-4542-87ac-8331662b6d14 outcome=completed
+2026-09-23T12:22:15.060Z START meta=gvs-solve label=decision_manager#2 phase=solve childId=6b3a9350-400a-4290-bc78-b27e75e43921
+2026-09-23T12:22:15.060Z START meta=gvs-solve label=decision_manager#2 phase=solve childId=6b3a9350-400a-4290-bc78-b27e75e43921
+2026-09-23T12:23:58.054Z WF-END meta=gvs-solve childId=6b3a9350-400a-4290-bc78-b27e75e43921 outcome=completed
+2026-09-23T12:23:58.054Z WF-END meta=gvs-solve childId=6b3a9350-400a-4290-bc78-b27e75e43921 outcome=completed
+2026-09-23T12:23:58.112Z START meta=gvs-solve label=laborer_worker#2 phase=solve childId=0a32a1f3-f36a-46e1-8a5b-e8c3a6623dc0
+2026-09-23T12:23:58.112Z START meta=gvs-solve label=laborer_worker#2 phase=solve childId=0a32a1f3-f36a-46e1-8a5b-e8c3a6623dc0
+2026-09-23T12:26:23.139Z WF-END meta=gvs-solve childId=0a32a1f3-f36a-46e1-8a5b-e8c3a6623dc0 outcome=completed
+2026-09-23T12:26:23.139Z WF-END meta=gvs-solve childId=0a32a1f3-f36a-46e1-8a5b-e8c3a6623dc0 outcome=completed
+2026-09-23T12:26:23.201Z START meta=gvs-solve label=check_worker#2 phase=solve childId=b91f7ffc-a32f-4cc9-8b52-b321880839dd
+2026-09-23T12:26:23.201Z START meta=gvs-solve label=check_worker#2 phase=solve childId=b91f7ffc-a32f-4cc9-8b52-b321880839dd
+2026-09-23T12:28:28.002Z WF-END meta=gvs-solve childId=b91f7ffc-a32f-4cc9-8b52-b321880839dd outcome=completed
+2026-09-23T12:28:28.002Z WF-END meta=gvs-solve childId=b91f7ffc-a32f-4cc9-8b52-b321880839dd outcome=completed
+2026-09-23T12:28:28.067Z START meta=gvs-solve label=decision_manager#3 phase=solve childId=42d94f97-b1a5-4eb3-ba86-d2031aeb0378
+2026-09-23T12:28:28.067Z START meta=gvs-solve label=decision_manager#3 phase=solve childId=42d94f97-b1a5-4eb3-ba86-d2031aeb0378
+2026-09-23T12:29:54.168Z WF-END meta=gvs-solve childId=42d94f97-b1a5-4eb3-ba86-d2031aeb0378 outcome=completed
+2026-09-23T12:29:54.168Z WF-END meta=gvs-solve childId=42d94f97-b1a5-4eb3-ba86-d2031aeb0378 outcome=completed
+2026-09-23T12:29:54.226Z START meta=gvs-solve label=laborer_worker#3 phase=solve childId=76c7b256-8007-4b45-a5c8-a4c041b1cb12
+2026-09-23T12:29:54.226Z START meta=gvs-solve label=laborer_worker#3 phase=solve childId=76c7b256-8007-4b45-a5c8-a4c041b1cb12
+2026-09-23T12:31:20.242Z WF-END meta=gvs-solve childId=76c7b256-8007-4b45-a5c8-a4c041b1cb12 outcome=completed
+2026-09-23T12:31:20.242Z WF-END meta=gvs-solve childId=76c7b256-8007-4b45-a5c8-a4c041b1cb12 outcome=completed
+2026-09-23T12:31:20.299Z START meta=gvs-solve label=check_worker#3 phase=solve childId=b23687cc-d3d3-4f89-a391-b4a76a070bb4
+2026-09-23T12:31:20.299Z START meta=gvs-solve label=check_worker#3 phase=solve childId=b23687cc-d3d3-4f89-a391-b4a76a070bb4
+2026-09-23T12:32:06.463Z WF-END meta=gvs-solve childId=b23687cc-d3d3-4f89-a391-b4a76a070bb4 outcome=completed
+2026-09-23T12:32:06.463Z WF-END meta=gvs-solve childId=b23687cc-d3d3-4f89-a391-b4a76a070bb4 outcome=completed
+2026-09-23T12:32:06.525Z START meta=gvs-solve label=decision_manager#4 phase=solve childId=39a5ce39-f151-4140-ad9f-d7be5df49376
+2026-09-23T12:32:06.525Z START meta=gvs-solve label=decision_manager#4 phase=solve childId=39a5ce39-f151-4140-ad9f-d7be5df49376
+2026-09-23T12:32:47.624Z WF-END meta=gvs-solve childId=39a5ce39-f151-4140-ad9f-d7be5df49376 outcome=completed
+2026-09-23T12:32:47.624Z WF-END meta=gvs-solve childId=39a5ce39-f151-4140-ad9f-d7be5df49376 outcome=completed
+2026-09-23T12:32:47.680Z START meta=gvs-solve label=history_worker phase=wrap childId=473ffab1-8dd4-468d-ac84-028744962b0c
+2026-09-23T12:32:47.680Z START meta=gvs-solve label=history_worker phase=wrap childId=473ffab1-8dd4-468d-ac84-028744962b0c
+2026-09-23T12:33:52.098Z WF-END meta=gvs-solve childId=473ffab1-8dd4-468d-ac84-028744962b0c outcome=completed
+2026-09-23T12:33:52.098Z WF-END meta=gvs-solve childId=473ffab1-8dd4-468d-ac84-028744962b0c outcome=completed
+2026-09-23T14:15:57.004Z WF-START name=gvs-solve id=4896314e-2f9b-4794-b190-1f41229fcd92
+2026-09-23T14:15:57.004Z WF-START name=gvs-solve id=4896314e-2f9b-4794-b190-1f41229fcd92
+2026-09-23T14:15:57.111Z START meta=gvs-solve label=predominant_manager phase=plan childId=2a0edfa4-f561-4a21-bb0e-3cbfd9c118a8
+2026-09-23T14:15:57.111Z START meta=gvs-solve label=predominant_manager phase=plan childId=2a0edfa4-f561-4a21-bb0e-3cbfd9c118a8
+2026-09-23T14:17:29.025Z WF-END meta=gvs-solve childId=2a0edfa4-f561-4a21-bb0e-3cbfd9c118a8 outcome=completed
+2026-09-23T14:17:29.025Z WF-END meta=gvs-solve childId=2a0edfa4-f561-4a21-bb0e-3cbfd9c118a8 outcome=completed
+2026-09-23T14:17:29.088Z START meta=gvs-solve label=decision_manager phase=solve childId=7fbdbd2c-74a9-477f-8d9e-965180aadda9
+2026-09-23T14:17:29.088Z START meta=gvs-solve label=decision_manager phase=solve childId=7fbdbd2c-74a9-477f-8d9e-965180aadda9
+2026-09-23T14:18:06.974Z WF-END meta=gvs-solve childId=7fbdbd2c-74a9-477f-8d9e-965180aadda9 outcome=completed
+2026-09-23T14:18:06.974Z WF-END meta=gvs-solve childId=7fbdbd2c-74a9-477f-8d9e-965180aadda9 outcome=completed
+2026-09-23T14:18:07.031Z START meta=gvs-solve label=laborer_worker phase=solve childId=7871dc0c-fc71-4463-aef3-5c850c04dc53
+2026-09-23T14:18:07.031Z START meta=gvs-solve label=laborer_worker phase=solve childId=7871dc0c-fc71-4463-aef3-5c850c04dc53
+2026-09-23T14:21:51.012Z WF-END meta=gvs-solve childId=7871dc0c-fc71-4463-aef3-5c850c04dc53 outcome=completed
+2026-09-23T14:21:51.012Z WF-END meta=gvs-solve childId=7871dc0c-fc71-4463-aef3-5c850c04dc53 outcome=completed
+2026-09-23T14:21:51.080Z START meta=gvs-solve label=check_worker phase=solve childId=5cfba983-8561-44c0-9e61-65de3cee49a5
+2026-09-23T14:21:51.080Z START meta=gvs-solve label=check_worker phase=solve childId=5cfba983-8561-44c0-9e61-65de3cee49a5
+2026-09-23T14:23:14.245Z WF-END meta=gvs-solve childId=5cfba983-8561-44c0-9e61-65de3cee49a5 outcome=completed
+2026-09-23T14:23:14.245Z WF-END meta=gvs-solve childId=5cfba983-8561-44c0-9e61-65de3cee49a5 outcome=completed
+2026-09-23T14:23:14.306Z START meta=gvs-solve label=decision_manager#2 phase=solve childId=92655ee7-7393-47a0-9ebb-70cab4471550
+2026-09-23T14:23:14.306Z START meta=gvs-solve label=decision_manager#2 phase=solve childId=92655ee7-7393-47a0-9ebb-70cab4471550
+2026-09-23T14:23:51.637Z WF-END meta=gvs-solve childId=92655ee7-7393-47a0-9ebb-70cab4471550 outcome=completed
+2026-09-23T14:23:51.637Z WF-END meta=gvs-solve childId=92655ee7-7393-47a0-9ebb-70cab4471550 outcome=completed
+2026-09-23T14:23:51.694Z START meta=gvs-solve label=laborer_worker#2 phase=solve childId=766ce81a-754e-4b85-ae43-5292a1f4f2e8
+2026-09-23T14:23:51.694Z START meta=gvs-solve label=laborer_worker#2 phase=solve childId=766ce81a-754e-4b85-ae43-5292a1f4f2e8
+2026-09-23T14:55:26.620Z WF-END meta=gvs-solve childId=766ce81a-754e-4b85-ae43-5292a1f4f2e8 outcome=completed
+2026-09-23T14:55:26.620Z WF-END meta=gvs-solve childId=766ce81a-754e-4b85-ae43-5292a1f4f2e8 outcome=completed
+2026-09-23T14:55:26.679Z START meta=gvs-solve label=check_worker#2 phase=solve childId=edb392f9-061a-4216-b39d-608be07eca0d
+2026-09-23T14:55:26.679Z START meta=gvs-solve label=check_worker#2 phase=solve childId=edb392f9-061a-4216-b39d-608be07eca0d
+2026-09-23T14:57:45.709Z WF-END meta=gvs-solve childId=edb392f9-061a-4216-b39d-608be07eca0d outcome=completed
+2026-09-23T14:57:45.709Z WF-END meta=gvs-solve childId=edb392f9-061a-4216-b39d-608be07eca0d outcome=completed
+2026-09-23T14:57:45.768Z START meta=gvs-solve label=decision_manager#3 phase=solve childId=dfe1608e-c1fd-4fd5-8b6c-be042361a3fe
+2026-09-23T14:57:45.768Z START meta=gvs-solve label=decision_manager#3 phase=solve childId=dfe1608e-c1fd-4fd5-8b6c-be042361a3fe
+2026-09-23T14:59:09.851Z WF-END meta=gvs-solve childId=dfe1608e-c1fd-4fd5-8b6c-be042361a3fe outcome=completed
+2026-09-23T14:59:09.851Z WF-END meta=gvs-solve childId=dfe1608e-c1fd-4fd5-8b6c-be042361a3fe outcome=completed
+2026-09-23T14:59:09.910Z START meta=gvs-solve label=laborer_worker#3 phase=solve childId=e7137ec3-e1a5-4edc-a6cd-2a9ac96d88c9
+2026-09-23T14:59:09.910Z START meta=gvs-solve label=laborer_worker#3 phase=solve childId=e7137ec3-e1a5-4edc-a6cd-2a9ac96d88c9
+2026-09-23T15:39:44.255Z WF-END meta=gvs-solve childId=e7137ec3-e1a5-4edc-a6cd-2a9ac96d88c9 outcome=completed
+2026-09-23T15:39:44.255Z WF-END meta=gvs-solve childId=e7137ec3-e1a5-4edc-a6cd-2a9ac96d88c9 outcome=completed
+2026-09-23T15:39:44.316Z START meta=gvs-solve label=check_worker#3 phase=solve childId=2bc81059-44f0-4f7f-9baf-7f12af250aa6
+2026-09-23T15:39:44.316Z START meta=gvs-solve label=check_worker#3 phase=solve childId=2bc81059-44f0-4f7f-9baf-7f12af250aa6
+2026-09-23T15:43:13.321Z WF-END meta=gvs-solve childId=2bc81059-44f0-4f7f-9baf-7f12af250aa6 outcome=completed
+2026-09-23T15:43:13.321Z WF-END meta=gvs-solve childId=2bc81059-44f0-4f7f-9baf-7f12af250aa6 outcome=completed
+2026-09-23T15:43:13.382Z START meta=gvs-solve label=decision_manager#4 phase=solve childId=127cc35b-681a-41fc-87e3-d16f3b3aaa34
+2026-09-23T15:43:13.382Z START meta=gvs-solve label=decision_manager#4 phase=solve childId=127cc35b-681a-41fc-87e3-d16f3b3aaa34
+2026-09-23T15:44:12.707Z WF-END meta=gvs-solve childId=127cc35b-681a-41fc-87e3-d16f3b3aaa34 outcome=completed
+2026-09-23T15:44:12.707Z WF-END meta=gvs-solve childId=127cc35b-681a-41fc-87e3-d16f3b3aaa34 outcome=completed
+2026-09-23T15:44:12.763Z START meta=gvs-solve label=laborer_worker#4 phase=solve childId=22dd891e-dc21-4f94-ab3a-4621055a94ba
+2026-09-23T15:44:12.763Z START meta=gvs-solve label=laborer_worker#4 phase=solve childId=22dd891e-dc21-4f94-ab3a-4621055a94ba
+2026-09-23T15:51:21.668Z WF-END meta=gvs-solve childId=22dd891e-dc21-4f94-ab3a-4621055a94ba outcome=completed
+2026-09-23T15:51:21.668Z WF-END meta=gvs-solve childId=22dd891e-dc21-4f94-ab3a-4621055a94ba outcome=completed
+2026-09-23T15:51:21.736Z START meta=gvs-solve label=check_worker#4 phase=solve childId=8127338e-8ef7-4f0f-bf8a-0b8aab11e7e9
+2026-09-23T15:51:21.736Z START meta=gvs-solve label=check_worker#4 phase=solve childId=8127338e-8ef7-4f0f-bf8a-0b8aab11e7e9
+2026-09-23T15:55:01.377Z WF-END meta=gvs-solve childId=8127338e-8ef7-4f0f-bf8a-0b8aab11e7e9 outcome=completed
+2026-09-23T15:55:01.377Z WF-END meta=gvs-solve childId=8127338e-8ef7-4f0f-bf8a-0b8aab11e7e9 outcome=completed
+2026-09-23T15:55:01.435Z START meta=gvs-solve label=decision_manager#5 phase=solve childId=5449bebd-0147-41cb-8915-112aa088b50e
+2026-09-23T15:55:01.435Z START meta=gvs-solve label=decision_manager#5 phase=solve childId=5449bebd-0147-41cb-8915-112aa088b50e
+2026-09-23T15:56:04.303Z WF-END meta=gvs-solve childId=5449bebd-0147-41cb-8915-112aa088b50e outcome=completed
+2026-09-23T15:56:04.303Z WF-END meta=gvs-solve childId=5449bebd-0147-41cb-8915-112aa088b50e outcome=completed
+2026-09-23T15:56:04.365Z START meta=gvs-solve label=laborer_worker#5 phase=solve childId=43bc040a-80c2-42fc-afdf-5bc35ecdec1e
+2026-09-23T15:56:04.365Z START meta=gvs-solve label=laborer_worker#5 phase=solve childId=43bc040a-80c2-42fc-afdf-5bc35ecdec1e
+2026-09-23T16:05:25.594Z WF-END meta=gvs-solve childId=43bc040a-80c2-42fc-afdf-5bc35ecdec1e outcome=completed
+2026-09-23T16:05:25.594Z WF-END meta=gvs-solve childId=43bc040a-80c2-42fc-afdf-5bc35ecdec1e outcome=completed
+2026-09-23T16:05:25.675Z START meta=gvs-solve label=check_worker#5 phase=solve childId=f15e2919-a55e-4af2-92d0-ead21483679b
+2026-09-23T16:05:25.675Z START meta=gvs-solve label=check_worker#5 phase=solve childId=f15e2919-a55e-4af2-92d0-ead21483679b
+2026-09-23T16:13:58.702Z WF-END meta=gvs-solve childId=f15e2919-a55e-4af2-92d0-ead21483679b outcome=completed
+2026-09-23T16:13:58.702Z WF-END meta=gvs-solve childId=f15e2919-a55e-4af2-92d0-ead21483679b outcome=completed
+2026-09-23T16:13:58.767Z START meta=gvs-solve label=decision_manager#6 phase=solve childId=8be55d95-9a33-47a2-acb8-8506cf312fe8
+2026-09-23T16:13:58.767Z START meta=gvs-solve label=decision_manager#6 phase=solve childId=8be55d95-9a33-47a2-acb8-8506cf312fe8
+2026-09-23T16:14:52.835Z WF-END meta=gvs-solve childId=8be55d95-9a33-47a2-acb8-8506cf312fe8 outcome=completed
+2026-09-23T16:14:52.835Z WF-END meta=gvs-solve childId=8be55d95-9a33-47a2-acb8-8506cf312fe8 outcome=completed
+2026-09-23T16:14:52.884Z START meta=gvs-solve label=laborer_worker#6 phase=solve childId=95f051be-ad42-4cfa-b917-2056c5ae52fb
+2026-09-23T16:14:52.884Z START meta=gvs-solve label=laborer_worker#6 phase=solve childId=95f051be-ad42-4cfa-b917-2056c5ae52fb
+2026-09-23T16:28:38.701Z WF-END meta=gvs-solve childId=95f051be-ad42-4cfa-b917-2056c5ae52fb outcome=completed
+2026-09-23T16:28:38.701Z WF-END meta=gvs-solve childId=95f051be-ad42-4cfa-b917-2056c5ae52fb outcome=completed
+2026-09-23T16:28:38.760Z START meta=gvs-solve label=check_worker#6 phase=solve childId=89282eef-3593-422c-810f-b9455a6c1c9e
+2026-09-23T16:28:38.760Z START meta=gvs-solve label=check_worker#6 phase=solve childId=89282eef-3593-422c-810f-b9455a6c1c9e
+2026-09-23T16:38:15.793Z WF-END meta=gvs-solve childId=89282eef-3593-422c-810f-b9455a6c1c9e outcome=completed
+2026-09-23T16:38:15.793Z WF-END meta=gvs-solve childId=89282eef-3593-422c-810f-b9455a6c1c9e outcome=completed
+2026-09-23T16:38:15.855Z START meta=gvs-solve label=decision_manager#7 phase=solve childId=8782e4be-26ce-472d-9c35-6cc7bf7d3fa7
+2026-09-23T16:38:15.855Z START meta=gvs-solve label=decision_manager#7 phase=solve childId=8782e4be-26ce-472d-9c35-6cc7bf7d3fa7
+2026-09-23T16:39:10.471Z WF-END meta=gvs-solve childId=8782e4be-26ce-472d-9c35-6cc7bf7d3fa7 outcome=completed
+2026-09-23T16:39:10.471Z WF-END meta=gvs-solve childId=8782e4be-26ce-472d-9c35-6cc7bf7d3fa7 outcome=completed
+2026-09-23T16:39:10.530Z START meta=gvs-solve label=laborer_worker#7 phase=solve childId=4aeba07c-3d76-4a99-bd59-5029e2cefd9e
+2026-09-23T16:39:10.530Z START meta=gvs-solve label=laborer_worker#7 phase=solve childId=4aeba07c-3d76-4a99-bd59-5029e2cefd9e
+2026-09-23T16:41:45.426Z WF-END meta=gvs-solve childId=4aeba07c-3d76-4a99-bd59-5029e2cefd9e outcome=completed
+2026-09-23T16:41:45.426Z WF-END meta=gvs-solve childId=4aeba07c-3d76-4a99-bd59-5029e2cefd9e outcome=completed
+2026-09-23T16:41:45.485Z START meta=gvs-solve label=check_worker#7 phase=solve childId=431c0f99-add7-4867-a841-bdaae0966048
+2026-09-23T16:41:45.485Z START meta=gvs-solve label=check_worker#7 phase=solve childId=431c0f99-add7-4867-a841-bdaae0966048
+2026-09-23T16:44:09.130Z WF-END meta=gvs-solve childId=431c0f99-add7-4867-a841-bdaae0966048 outcome=completed
+2026-09-23T16:44:09.130Z WF-END meta=gvs-solve childId=431c0f99-add7-4867-a841-bdaae0966048 outcome=completed
+2026-09-23T16:44:09.184Z START meta=gvs-solve label=decision_manager#8 phase=solve childId=d330e1f6-4de3-4a44-a0a8-65e3d643f20a
+2026-09-23T16:44:09.184Z START meta=gvs-solve label=decision_manager#8 phase=solve childId=d330e1f6-4de3-4a44-a0a8-65e3d643f20a
+2026-09-23T16:45:16.939Z WF-END meta=gvs-solve childId=d330e1f6-4de3-4a44-a0a8-65e3d643f20a outcome=completed
+2026-09-23T16:45:16.939Z WF-END meta=gvs-solve childId=d330e1f6-4de3-4a44-a0a8-65e3d643f20a outcome=completed
+2026-09-23T16:45:16.999Z START meta=gvs-solve label=laborer_worker#8 phase=solve childId=6a23e459-b1f7-48dd-a7a4-a91cdbd0e1fb
+2026-09-23T16:45:16.999Z START meta=gvs-solve label=laborer_worker#8 phase=solve childId=6a23e459-b1f7-48dd-a7a4-a91cdbd0e1fb
+2026-09-23T16:50:32.621Z WF-END meta=gvs-solve childId=6a23e459-b1f7-48dd-a7a4-a91cdbd0e1fb outcome=completed
+2026-09-23T16:50:32.621Z WF-END meta=gvs-solve childId=6a23e459-b1f7-48dd-a7a4-a91cdbd0e1fb outcome=completed
+2026-09-23T16:50:32.676Z START meta=gvs-solve label=check_worker#8 phase=solve childId=8b984e6d-7a0f-4320-864f-3f1dd2bd09c8
+2026-09-23T16:50:32.676Z START meta=gvs-solve label=check_worker#8 phase=solve childId=8b984e6d-7a0f-4320-864f-3f1dd2bd09c8
+2026-09-23T16:52:11.410Z WF-END meta=gvs-solve childId=8b984e6d-7a0f-4320-864f-3f1dd2bd09c8 outcome=completed
+2026-09-23T16:52:11.410Z WF-END meta=gvs-solve childId=8b984e6d-7a0f-4320-864f-3f1dd2bd09c8 outcome=completed
+2026-09-23T16:52:11.469Z START meta=gvs-solve label=decision_manager#9 phase=solve childId=c10302ba-d804-420d-a4fd-8ff48be9a7ac
+2026-09-23T16:52:11.469Z START meta=gvs-solve label=decision_manager#9 phase=solve childId=c10302ba-d804-420d-a4fd-8ff48be9a7ac
+2026-09-23T16:52:46.669Z WF-END meta=gvs-solve childId=c10302ba-d804-420d-a4fd-8ff48be9a7ac outcome=completed
+2026-09-23T16:52:46.669Z WF-END meta=gvs-solve childId=c10302ba-d804-420d-a4fd-8ff48be9a7ac outcome=completed
+2026-09-23T16:52:46.718Z START meta=gvs-solve label=history_worker phase=wrap childId=57216c75-790b-457e-8e49-54b451854eb1
+2026-09-23T16:52:46.718Z START meta=gvs-solve label=history_worker phase=wrap childId=57216c75-790b-457e-8e49-54b451854eb1
+2026-09-23T16:53:34.650Z WF-END meta=gvs-solve childId=57216c75-790b-457e-8e49-54b451854eb1 outcome=completed
+2026-09-23T16:53:34.650Z WF-END meta=gvs-solve childId=57216c75-790b-457e-8e49-54b451854eb1 outcome=completed
+2026-09-24T01:53:33.860Z WF-START name=gvs-solve id=f9ac8105-6d8a-434c-9d17-b297b1d25b62
+2026-09-24T01:53:33.860Z WF-START name=gvs-solve id=f9ac8105-6d8a-434c-9d17-b297b1d25b62
+2026-09-24T01:53:34.357Z START meta=gvs-solve label=predominant_manager phase=plan childId=b980414f-e68d-4516-9943-45490bbd92f1
+2026-09-24T01:53:34.357Z START meta=gvs-solve label=predominant_manager phase=plan childId=b980414f-e68d-4516-9943-45490bbd92f1
+2026-09-24T01:55:49.557Z WF-END meta=gvs-solve childId=b980414f-e68d-4516-9943-45490bbd92f1 outcome=failed
+2026-09-24T01:55:49.557Z WF-END meta=gvs-solve childId=b980414f-e68d-4516-9943-45490bbd92f1 outcome=failed
+2026-09-24T01:55:49.871Z START meta=gvs-solve label=predominant_manager-retry phase=plan childId=4f351f45-a355-4062-9246-c23e1bb24a7b
+2026-09-24T01:55:49.871Z START meta=gvs-solve label=predominant_manager-retry phase=plan childId=4f351f45-a355-4062-9246-c23e1bb24a7b
+2026-09-24T01:55:49.886Z WF-END meta=gvs-solve childId=4f351f45-a355-4062-9246-c23e1bb24a7b outcome=failed
+2026-09-24T01:55:49.886Z WF-END meta=gvs-solve childId=4f351f45-a355-4062-9246-c23e1bb24a7b outcome=failed
+2026-09-24T01:55:50.177Z START meta=gvs-solve label=decision_manager phase=solve childId=b2d7241d-3e43-4a27-a632-ac61c92136e2
+2026-09-24T01:55:50.177Z START meta=gvs-solve label=decision_manager phase=solve childId=b2d7241d-3e43-4a27-a632-ac61c92136e2
+2026-09-24T01:55:50.190Z WF-END meta=gvs-solve childId=b2d7241d-3e43-4a27-a632-ac61c92136e2 outcome=failed
+2026-09-24T01:55:50.190Z WF-END meta=gvs-solve childId=b2d7241d-3e43-4a27-a632-ac61c92136e2 outcome=failed
+2026-09-24T01:55:50.426Z START meta=gvs-solve label=decision_manager-retry phase=solve childId=2f2926e3-3501-40ed-8ed0-cbf2fde2dc5c
+2026-09-24T01:55:50.426Z START meta=gvs-solve label=decision_manager-retry phase=solve childId=2f2926e3-3501-40ed-8ed0-cbf2fde2dc5c
+2026-09-24T01:55:50.440Z WF-END meta=gvs-solve childId=2f2926e3-3501-40ed-8ed0-cbf2fde2dc5c outcome=failed
+2026-09-24T01:55:50.440Z WF-END meta=gvs-solve childId=2f2926e3-3501-40ed-8ed0-cbf2fde2dc5c outcome=failed
+2026-09-24T01:55:50.757Z START meta=gvs-solve label=history_worker phase=wrap childId=3d3589d1-bfd6-4e0a-b69f-f5ef5cb91f34
+2026-09-24T01:55:50.757Z START meta=gvs-solve label=history_worker phase=wrap childId=3d3589d1-bfd6-4e0a-b69f-f5ef5cb91f34
+2026-09-24T01:55:50.770Z WF-END meta=gvs-solve childId=3d3589d1-bfd6-4e0a-b69f-f5ef5cb91f34 outcome=failed
+2026-09-24T01:55:50.770Z WF-END meta=gvs-solve childId=3d3589d1-bfd6-4e0a-b69f-f5ef5cb91f34 outcome=failed
+2026-09-24T01:55:51.014Z START meta=gvs-solve label=history_worker-retry phase=wrap childId=4855d9e1-e48e-48aa-9679-0579284fe055
+2026-09-24T01:55:51.014Z START meta=gvs-solve label=history_worker-retry phase=wrap childId=4855d9e1-e48e-48aa-9679-0579284fe055
+2026-09-24T01:55:51.026Z WF-END meta=gvs-solve childId=4855d9e1-e48e-48aa-9679-0579284fe055 outcome=failed
+2026-09-24T01:55:51.026Z WF-END meta=gvs-solve childId=4855d9e1-e48e-48aa-9679-0579284fe055 outcome=failed
+2026-09-24T02:00:21.478Z WF-START name=gvs-solve id=ad4f0ec8-b5cd-494b-bf51-c71c92cc79a1
+2026-09-24T02:00:21.478Z WF-START name=gvs-solve id=ad4f0ec8-b5cd-494b-bf51-c71c92cc79a1
+2026-09-24T02:06:00.591Z WF-START name=gvs-solve id=e0e3299b-acb1-4208-9d66-3a39376c1182
+2026-09-24T02:06:00.591Z WF-START name=gvs-solve id=e0e3299b-acb1-4208-9d66-3a39376c1182
+2026-09-24T02:06:00.960Z START meta=gvs-solve label=predominant_manager phase=plan childId=de0072ac-8fe6-461e-9e33-d5bd2209fc25
+2026-09-24T02:06:00.960Z START meta=gvs-solve label=predominant_manager phase=plan childId=de0072ac-8fe6-461e-9e33-d5bd2209fc25
+2026-09-24T02:06:07.269Z WF-END meta=gvs-solve childId=de0072ac-8fe6-461e-9e33-d5bd2209fc25 outcome=failed
+2026-09-24T02:06:07.269Z WF-END meta=gvs-solve childId=de0072ac-8fe6-461e-9e33-d5bd2209fc25 outcome=failed
+2026-09-24T02:06:09.768Z START meta=gvs-solve label=predominant_manager-retry phase=plan childId=ff385677-55a5-47ce-803b-efe78db04639
+2026-09-24T02:06:09.768Z START meta=gvs-solve label=predominant_manager-retry phase=plan childId=ff385677-55a5-47ce-803b-efe78db04639
+2026-09-24T02:06:09.784Z WF-END meta=gvs-solve childId=ff385677-55a5-47ce-803b-efe78db04639 outcome=failed
+2026-09-24T02:06:09.784Z WF-END meta=gvs-solve childId=ff385677-55a5-47ce-803b-efe78db04639 outcome=failed
+2026-09-24T02:06:09.908Z START meta=gvs-solve label=decision_manager phase=solve childId=07d6f202-ef14-48ee-8a7b-527b1a507b92
+2026-09-24T02:06:09.908Z START meta=gvs-solve label=decision_manager phase=solve childId=07d6f202-ef14-48ee-8a7b-527b1a507b92
+2026-09-24T02:06:09.921Z WF-END meta=gvs-solve childId=07d6f202-ef14-48ee-8a7b-527b1a507b92 outcome=failed
+2026-09-24T02:06:09.921Z WF-END meta=gvs-solve childId=07d6f202-ef14-48ee-8a7b-527b1a507b92 outcome=failed
+2026-09-24T02:06:10.079Z START meta=gvs-solve label=decision_manager-retry phase=solve childId=06b67e33-cd71-43a3-b539-9c2aa0526b7d
+2026-09-24T02:06:10.079Z START meta=gvs-solve label=decision_manager-retry phase=solve childId=06b67e33-cd71-43a3-b539-9c2aa0526b7d
+2026-09-24T02:06:10.096Z WF-END meta=gvs-solve childId=06b67e33-cd71-43a3-b539-9c2aa0526b7d outcome=failed
+2026-09-24T02:06:10.096Z WF-END meta=gvs-solve childId=06b67e33-cd71-43a3-b539-9c2aa0526b7d outcome=failed
+2026-09-24T02:06:10.258Z START meta=gvs-solve label=history_worker phase=wrap childId=4d7ee0c4-a86f-4325-a913-8d372a3ee10b
+2026-09-24T02:06:10.258Z START meta=gvs-solve label=history_worker phase=wrap childId=4d7ee0c4-a86f-4325-a913-8d372a3ee10b
+2026-09-24T02:06:10.274Z WF-END meta=gvs-solve childId=4d7ee0c4-a86f-4325-a913-8d372a3ee10b outcome=failed
+2026-09-24T02:06:10.274Z WF-END meta=gvs-solve childId=4d7ee0c4-a86f-4325-a913-8d372a3ee10b outcome=failed
+2026-09-24T02:06:10.418Z START meta=gvs-solve label=history_worker-retry phase=wrap childId=c180ec41-cded-41f0-95cb-a182599bd8d0
+2026-09-24T02:06:10.418Z START meta=gvs-solve label=history_worker-retry phase=wrap childId=c180ec41-cded-41f0-95cb-a182599bd8d0
+2026-09-24T02:06:10.432Z WF-END meta=gvs-solve childId=c180ec41-cded-41f0-95cb-a182599bd8d0 outcome=failed
+2026-09-24T02:06:10.432Z WF-END meta=gvs-solve childId=c180ec41-cded-41f0-95cb-a182599bd8d0 outcome=failed

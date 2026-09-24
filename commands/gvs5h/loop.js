@@ -42,7 +42,7 @@ function cfg(key, dflt) {
   return dflt
 }
 
-const PLAN_ROUNDS = Math.max(1, cfg("planRounds", 8))
+const PLAN_ROUNDS = Math.max(1, cfg("planRounds", 10))
 const REPLAN_MAX = cfg("replanMax", 2)
 
 /** 从回复里收集 `- OPEN:` 行。 */
@@ -94,6 +94,41 @@ function pressureSnap() {
 function pressurePeak() {
   const j = pressureSnap()
   return (j && j.peak) || "none"
+}
+
+/**
+ * @description 读 WS/tools.json；缺失或非法返回 []。
+ * @returns {Array<object>}
+ */
+function toolList() {
+  try {
+    const j = JSON.parse(nodeBuiltin("fs").readFileSync(WS + "/tools.json", "utf8"))
+    return Array.isArray(j) ? j : []
+  } catch (e) {
+    return []
+  }
+}
+
+/** 注入 decision / laborer / check 的 TOOLS 块；每轮重读，decision 刚批准的下一轮即可见。 */
+function toolsBlock() {
+  const ts = toolList().filter(function (t) { return t && t.status !== "retired" })
+  if (!ts.length) return "TOOLS: none (build the verify tool first)"
+  const out = ["TOOLS (paths relative to WS; use adopted ones by id):"]
+  for (let i = 0; i < ts.length; i++) {
+    const t = ts[i]
+    out.push("- " + (t.id || "?") + " [" + (t.kind || "?") + "|" + (t.status || "?") + "] "
+      + (t.path || "?") + " | args: " + (t.call || "none") + " | output: " + (t.output || "n/a"))
+  }
+  return out.join(NL)
+}
+
+/** 是否已有 adopted 的 verify 工具。 */
+function hasVerifyTool() {
+  const ts = toolList()
+  for (let i = 0; i < ts.length; i++) {
+    if (ts[i] && ts[i].kind === "verify" && ts[i].status === "adopted") return true
+  }
+  return false
 }
 
 /** 给 predominant 的地面事实行。 */
@@ -220,12 +255,12 @@ function wipeLedger() {
 }
 
 /**
- * @description 删探针产物：try_scripts/、probes.json、pressure.json。起点和终点都跑，保证幂等。
+ * @description 删探针与工具产物：try_scripts/、probes.json、tools.json、pressure.json。起点和终点都跑，保证幂等。
  * @returns {void}
  */
 function wipeProbe() {
   const fs = nodeBuiltin("fs")
-  const targets = ["try_scripts", "probes.json", "pressure.json"]
+  const targets = ["try_scripts", "probes.json", "tools.json", "pressure.json"]
   for (let i = 0; i < targets.length; i++) {
     try {
       fs.rmSync(WS + "/" + targets[i], { recursive: true, force: true })
@@ -276,6 +311,7 @@ wipeProbe()
 let p = await planRing("LAST TRY: (none)")
 let PLAN = sec(p, "PLAN")
 let last = p || "(planner unavailable)"
+if (!hasVerifyTool()) log("plan ring: no adopted verify tool")
 
 phase("solve")
 let prev = null
@@ -287,6 +323,7 @@ for (; ;) {
   const d = await roleCall("decision_manager", HEAD
     + "PROBLEM:" + NL + args.problem + NL + NL
     + "PLAN:" + NL + PLAN + NL + NL
+    + toolsBlock() + NL + NL
     + "REPLAN BUDGET LEFT: " + Math.max(0, REPLAN_MAX - replans) + NL + NL
     + "LATEST WORKER RESULT:" + NL + last)
   if (!d) {
@@ -324,20 +361,30 @@ for (; ;) {
   const w = await cutCall("laborer_worker", HEAD
     + "PROBLEM:" + NL + args.problem + NL + NL
     + "PLAN:" + NL + PLAN + NL + NL
+    + toolsBlock() + NL + NL
     + "YOUR TASK: " + NEXT)
   last = await roleCall("check_worker", HEAD
+    + "ROUND: " + rounds + NL + NL
     + "PROBLEM:" + NL + args.problem + NL + NL
+    + toolsBlock() + NL + NL
     + "TASK: " + NEXT + NL + NL
+    + "DELIVERABLE THIS ROUND:" + NL + (sec(w, "DELIVERABLE") || "none") + NL + NL
+    + "PROPOSED TOOLS THIS ROUND:" + NL + (sec(w, "PROPOSE") || "none") + NL + NL
     + "LATEST LABOR (may be truncated if the host hard-aborted):" + NL + (w || "(abnormal interrupt; no wrap)") + NL + NL
+    + "Append a ROUND " + rounds + " section to WS/checks.md from TASK done-when and every DELIVERABLE path; rerun BASELINE too." + NL
+    + "Every pass must rest on something you ran or opened in this call. Laborer claims are not evidence." + NL
+    + "Visual items: capture fresh with an adopted verify tool, read_image, write seen: before judging." + NL
+    + "Comparing the product with its own earlier output is never a pass condition." + NL
     + "HOST PRESSURE is ground truth (injected message and/or WS/pressure.json). Do not let the laborer self-report override it." + NL
     + "If peak=hard the laborer was abnormally interrupted: inventory leftover CWD/WS edits in INTERRUPT; FEEDBACK is for decision_manager." + NL
-    + "If the work is a batch, report per-item counts and failure classes in the first EVIDENCE bullet." + NL
-    + "Your full reply (CHECKS + PRESSURE + INTERRUPT + FEEDBACK) is the next manager brief. Do not spawn anyone.")
+    + "If the work is a batch, report per-item counts and failure classes in EVIDENCE." + NL
+    + "Your full reply (8 sections) is the next manager brief. Do not spawn anyone.")
 }
 
 outcome.replans = replans
 outcome.planCalls = planCalls
 outcome.tryCalls = tryCalls
+outcome.verifyTool = hasVerifyTool()
 
 phase("wrap")
 const hist = await roleCall("history_worker", HEAD
