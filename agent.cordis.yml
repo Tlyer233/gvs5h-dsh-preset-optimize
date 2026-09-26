@@ -228,8 +228,8 @@
         backgroundMode: one-shot
         maxDepth: provider-managed
 
-    - id: workflow-ptc
-      name: '@deepseek-ai/dsh-workflow-ptc'
+    - id: workflow-worker-thread
+      name: '@deepseek-ai/dsh-workflow-worker-thread'
       config:
         provider: spawn
 
